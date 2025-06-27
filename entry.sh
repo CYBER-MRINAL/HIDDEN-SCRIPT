@@ -41,7 +41,7 @@ if [[ "$pass" == "HACK4DHARMA" ]]; then
     echo -e "\n\e[94mDecoding Secure Message...\e[0m"
     sleep 1
 
-    decoded=$(echo "Sm9pbiB1cyBhdCB0aGUgdGVtcGxlIG9mIHRydXRoOiBodHRwczovL3QubWUveHl6cGVhcg==" | base64 -d)
+    decoded=$(echo "aHR0cHM6Ly90Lm1lL2N5YmVybXJpbmFsZ3JvdXA=" | base64 -d)
 
     echo -e "\n\e[92m== DECODED INTEL ==\e[0m"
     echo -e "\e[96m$decoded\e[0m"
