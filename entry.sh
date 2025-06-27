@@ -33,9 +33,13 @@ check_tor() {
 
 check_tor
 
-echo
-read -p $'\e[93m[?] ENTER THE DECRYPTION KEY TO CONTINUE: \e[0m' pass
-echo -ne "\nAnalyzing"; for i in {1..5}; do sleep 0.3; echo -n "."; done; echo
+if [ -t 0 ]; then
+    read -p $'\e[93m[?] ENTER THE DECRYPTION KEY TO CONTINUE: \e[0m' pass
+else
+    echo -e "\e[93m[!] INTERACTIVE MODE REQUIRED. DOWNLOAD THE SCRIPT AND RUN LOCALLY:\e[0m"
+    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/entry.sh && bash entry.sh\e[0m"
+    exit 1
+fi
 
 # Expected key
 secret="HACK4DHARMA"
