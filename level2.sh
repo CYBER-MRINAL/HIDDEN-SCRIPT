@@ -1,27 +1,33 @@
 #!/bin/bash
 
 clear
-echo -e "\e[96m[+] LEVEL 2 INITIATED: ADVANCED INTELLIGENCE PUZZLE\e[0m"
+echo -e "\e[96m┌──────────────────────────────────────────────┐"
+echo -e "\e[96m│            LEVEL 2: ENCODED INTEL            │"
+echo -e "\e[96m└──────────────────────────────────────────────┘\e[0m"
 sleep 1
 
-file_url="https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/main/mission.enc"
-expected_hash="19a4b3df69c4d5f04f627367710aa0c2a2ee0ed12448675563765a4319a5a9cf"
+echo -e "\e[92m[+] Loading encrypted intelligence file...\e[0m"
+sleep 1
 
-echo "[*] Downloading Encrypted File..."
-curl -s -o mission.enc "$file_url"
+intel="ZWhjL29ncmUvbWUvbHVsYXBvc2RpcmZAMTIzZ21vYy9ncm91cC5uZWxldGVyY2l0aXNzc2FwLw=="
+echo -e "\n🔐 Encrypted string (base64):"
+echo -e "\e[93m$intel\e[0m"
 
-echo "[*] Verifying File Integrity..."
-actual_hash=$(sha256sum mission.enc | awk '{print $1}')
+echo
+echo -e "\e[94m[?] TASK: Decode the message using Linux terminal tools."
+echo -e "Hint: Try \`echo '<string>' | base64 -d\`\e[0m"
+echo
 
-if [[ "$expected_hash" == "$actual_hash" ]]; then
-    echo -e "\e[92m[✓] Checksum Valid — Decryption Possible\e[0m"
+read -p $'\e[93m[>] Paste the decoded message to continue: \e[0m' answer
+
+correct="ehc/ogre/me/lulaposdirf@123gmoc/group.neletercitisssap/"
+
+if [[ "$answer" == "$correct" ]]; then
+    echo -e "\n\e[92m✅ DECRYPTION SUCCESSFUL — ACCESS GRANTED\e[0m"
+    echo -e "\n🧠 MESSAGE:"
+    echo -e "\e[96mJoin us: https://t.me/cybermrinalgroup\e[0m"
+    echo -e "\e[90m(Reverse the text in your mind to read the truth)\e[0m"
 else
-    echo -e "\e[91m[✗] File Integrity Failed — Tampered or Outdated File\e[0m"
-    exit 1
+    echo -e "\n\e[91m❌ ACCESS DENIED — Incorrect decryption\e[0m"
+    echo -e "\e[90mTip: Try decoding again using base64 + reversing logic.\e[0m"
 fi
-
-echo
-echo -e "\e[93mDecrypt this file manually using:\e[0m"
-echo -e "\e[96mgpg --output mission.txt --decrypt mission.enc\e[0m"
-echo
-echo -e "\e[90mIf you succeed, the final access key will be inside mission.txt\e[0m"
