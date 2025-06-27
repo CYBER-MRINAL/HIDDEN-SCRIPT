@@ -51,7 +51,7 @@ if [[ "$pass" == "$secret" ]]; then
     echo -e "\e[93m$(echo 'Sm9pbiB1cyBhdCB0aGUgdGVtcGxlIG9mIHRydXRoOiBodHRwczovL3QubWUveHl6cGVhcg==' | base64 -d)\e[0m"
     echo
     echo -e "\e[92m[→] Proceed to LEVEL 2:\e[0m"
-    echo -e "\e[96mcurl -s https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/main/level2.sh | bash\e[0m"
+    echo -e "\e[96mcurl -s https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level2.sh | bash\e[0m"
 else
     echo -e "\n\e[91m[✗] ACCESS DENIED — INVALID KEY\e[0m"
     sleep 1
