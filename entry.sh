@@ -40,7 +40,7 @@ if [[ "$pass" == "HACK4DHARMA" ]]; then
     echo -e "\e[96m$decoded\e[0m"
 
     echo -e "\n\e[94m[→] Proceed to LEVEL 2:\e[0m"
-    echo -e "\e[92mbash <(curl -s https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level2.sh)\e[0m"
+    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/entry.sh && bash entry.sh\e[0m"
 else
     echo -e "\n\e[91m[✗] ACCESS DENIED — INVALID KEY\e[0m"
     echo -e "\e[90m> Hint: The passphrase is hidden in my GitHub profile.\e[0m"
