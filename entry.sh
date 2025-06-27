@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# PASSWORD = "HACK4DHARMA"
+
 clear
 echo -e "\e[96m┌────────────────────────────────────┐"
 echo -e "\e[96m│      TERMINAL HACKER CHALLENGE     │"
@@ -15,6 +17,11 @@ sleep 1
 echo -e "\e[92m[✓] TOR Network Check: Skipped (Dev Mode)\e[0m"
 sleep 1
 echo ""
+
+echo
+echo -e "\e[94m[?] TASK: Decode the message using Linux terminal tools."
+echo -e "Hint: Try \`cat '<this script>' | and read the code\`\e[0m"
+echo
 
 # ✅ Make sure script is interactive
 if [[ ! -t 0 ]]; then
