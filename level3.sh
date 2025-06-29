@@ -28,6 +28,7 @@ if [[ "$input" == "$expected" ]]; then
     echo -e "\n🔗 CONNECT SECURELY:"
     echo -e "\e[96m$expected\e[0m"
     echo -e "\e[90m(Only the worthy reach this far)\e[0m"
+    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level4.sh && bash level4.sh\e[0m"
 else
     echo -e "\n\e[91m❌ ACCESS DENIED — Incorrect decryption\e[0m"
     echo -e "\e[90m> Hint: Use \`xxd -r -p\` or convert hex using terminal methods.\e[0m"
