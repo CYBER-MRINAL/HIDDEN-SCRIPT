@@ -12,7 +12,7 @@ read -p $'\e[93m[?] Enter final passphrase: \e[0m' p
 
 if [[ "$p" == "dharma2025" ]]; then
     echo -e "\e[92m🎉 YOU ARE WORTHY — CHALLENGE COMPLETE\e[0m"
-    echo -e "\e[96mLINK: https://t.me/CYBERMRINAL \e[0m"
+    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level11.sh && bash level11.sh\e[0m"
 else
     echo -e "\e[91m[✗] Incorrect. Restart from Level 1.\e[0m"
 fi
