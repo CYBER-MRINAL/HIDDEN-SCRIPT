@@ -28,7 +28,8 @@ if [[ "$answer" == "$correct" ]]; then
     echo -e "\e[96mFollow me: https://www.instagram.com/CYBERMRINAL \e[0m"
     echo -e "\e[90m(Reverse the text in your mind to read the truth)\e[0m"
     echo -e "\n\e[94m[→] Proceed to LEVEL 2:\e[0m"
-    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level3.sh && bash level3.sh\e[0m"
+    echo -e "\n\e[94m[->] Decode this base64 line\e[0m"
+    echo -e "\e[92md2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQ1lCRVItTVJJTkFML0hJRERF Ti1TQ1JJUFQvbWFzdGVyL2xldmVsMy5zaCAmJiBiYXNoIGxldmVsMy5zaA==\e[0m"
 else
     echo -e "\n\e[91m❌ ACCESS DENIED — Incorrect decryption\e[0m"
     echo -e "\e[90mTip: Try decoding again using base64 + reversing logic.\e[0m"

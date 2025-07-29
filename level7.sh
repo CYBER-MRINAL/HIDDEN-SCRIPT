@@ -15,7 +15,8 @@ read -p $'\e[93m[?] What IP did the attacker use? \e[0m' ip
 
 if [[ "$ip" == "10.10.10.10" ]]; then
     echo -e "\e[92m[✓] Correct. Proceed to Level 8.\e[0m"
-    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level8.sh && bash level8.sh\e[0m"
+    echo -e "\e[94m[->] Decrypt this base64 line\3e[0m"
+    echo -e "\e[92md2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQ1lCRVItTVJJTkFML0hJRERF Ti1TQ1JJUFQvbWFzdGVyL2xldmVsOC5zaCAmJiBiYXNoIGxldmVsOC5zaA==\e[0m"
 else
     echo -e "\e[91m[✗] Incorrect. Re-read logs.\e[0m"
 fi

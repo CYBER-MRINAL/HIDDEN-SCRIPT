@@ -13,7 +13,8 @@ read -p $'\e[93m[?] What platform is the link from? (e.g., linkedin) \e[0m' inpu
 
 if [[ "$input" == "linkedin" ]]; then
     echo -e "\e[92m[✓] Access granted to Level 9.\e[0m"
-    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level9.sh && bash level9.sh\e[0m"
+    echo -e "\e[94m[->] Decrypt this base64 line\e[0m"
+    echo -e "\e[92md2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQ1lCRVItTVJJTkFML0hJRERF Ti1TQ1JJUFQvbWFzdGVyL2xldmVsOS5zaCAmJiBiYXNoIGxldmVsOS5zaA==\e[0m"
 else
     echo -e "\e[91m[✗] Wrong platform. Hint: it’s for professionals.\e[0m"
 fi

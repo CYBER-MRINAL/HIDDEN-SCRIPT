@@ -20,7 +20,8 @@ echo
 read -p $'\e[93m[?] Enter the valid username based on OSINT match: \e[0m' input
 if [[ "$input" == "cybermrinal" ]]; then
     echo -e "\e[92m[✓] Correct! Proceed to next level.\e[0m"
-    echo -e "\e[92mwget https://raw.githubusercontent.com/CYBER-MRINAL/HIDDEN-SCRIPT/master/level5.sh && bash level5.sh\e[0m"
+    echo -e "\e[94m[->] Decrypt this base64 line\e[0m"
+    echo -e "\e[92md2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQ1lCRVItTVJJTkFML0hJRERF Ti1TQ1JJUFQvbWFzdGVyL2xldmVsNS5zaCAmJiBiYXNoIGxldmVsNS5zaA==\e[0m"
 else
     echo -e "\e[91m[✗] Wrong username. Try harder.\e[0m"
 fi
