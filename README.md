@@ -8,3 +8,5 @@ Puzzel for Hackers not for script kiddey
 - By the way nice to meet you. (^_^) 
 --- 
 I am **CYBER-MRINAL**. Just a reminder this puzzels are too much easy so don't think that you are on right way you have to **practice** more.
+
+`BONUS-TIP`: Always be **pratical** and remmember no one can beat the level of **hardwork**. So, be **updated** and do **hardwork** with **decipline**.
